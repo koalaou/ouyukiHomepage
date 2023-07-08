@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="Inquiry.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Kiwi+Maru:wght@300&family=Noto+Serif+JP:wght@600&family=Zen+Old+Mincho:wght@600&display=swap"
+         rel="stylesheet">
+      <title>Inquiry</title>
+   </head>
+
+   <body>
+
+      <div class="contact-form">
+         <h1 class="title">ご利用上のお問合せ</h1>
+         <form action="" method="post">
+            <div class="item">
+               <label class="lable">お名前</label>
+               <input type="text" class="inputs" name="username">
+            </div>
+
+            <div class="item">
+               <label class="lable">メールアドレス</label>
+               <input type="email" class="inputs" name="email" required>
+            </div>
+
+            <div class="item">
+               <label class="lable">ご登録の携帯電話番号</label>
+               <input type="tel" class="inputs" name="email">
+            </div>
+
+            <div class="item">
+               <label class="lable">お問合わせの種類</label>
+               <select name="種類">
+                  <option value="1">商品に関する</option>
+                  <option value="2">送り状に関する</option>
+                  <option value="3">会社に関する</option>
+                  <option value="4">アニメに関する</option>
+                  <option value="5">コラボに関する</option>
+               </select>
+            </div>
+            <div class="item">
+               <label class="lable">お問い合わせ内容</label>
+               <textarea class="input" placeholder="お問い合わせ内容はこちら"></textarea>
+            </div>
+
+            <div class="button-area">
+               <input type="submit" value="確認">
+               <input type="reset" value="リセット">
+            </div>
+         </form>
+
+         <a href="Index.html"> ホームページへ戻る</a>
+      </div>
+
+      
+   </body>
+
+</html>

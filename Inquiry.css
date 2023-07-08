@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Hachi Maru Pop', cursive;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 246, 233);
+}
+
+.contact-form{
+    border: 1.5px solid rgb(235, 212, 230);
+    padding: 50px 30px;
+    border-radius: 5px;
+    box-shadow: 1px 3px 3px rgb(213, 165, 165);
+}
+
+.title{
+text-align: center;
+font-size: 20px;
+margin-bottom: 20px;
+font-weight: bold;
+}
+
+.form{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.item{
+overflow: hidden;
+margin-bottom: 20px;
+}
+
+.lable{
+    float: left;
+    margin-right: 19px;
+    width: 173px;
+    border-left:3px solid rgb(64, 148, 167) ;
+    padding-left: 10px;
+}
+
+.input{
+    float: left;
+    width: 300px;
+}
+
+input[type="text"],
+input[type="email"],input[type="tel"]{
+border: solid 2px rgb(221, 216, 210);
+font-size: 15px;
+border-radius: 5px;
+padding: 4px;
+width: 230px;
+}
+
+textarea{
+    border: 2px solid rgb(221, 216, 210);
+    border-radius: 5px;
+    padding: 10px;
+    height: 160px;
+    width: 300px;
+    font-size: 15px;
+}
+
+.button-area{
+    text-align: center;
+
+}
+
+input[type="submit"]{
+background-color: rgb(76, 181, 237);
+border: none;
+padding: 8px 25px;
+color: white;
+font-size: 15px;
+border-radius: 5px;
+box-shadow: 1px 1px 3px rgb(40, 38, 38);
+cursor: pointer;
+}
+
+input[type="reset"]{
+    background-color: rgb(160, 160, 164);
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    margin: 0 8px;
+    box-shadow: 1px 1px 3px rgb(40, 38, 38);
+    cursor: pointer;
+    }

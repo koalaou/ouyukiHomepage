@@ -1,0 +1,219 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Unbounded', cursive;
+    background-image: url("img/webpic-back.png");
+    background-size:cover;
+    width: 100%;
+    height:100%;
+}
+
+#container{
+    width: 1190px;
+    margin:0px auto;
+}
+
+#header{
+height: 70px;
+position: relative;
+}
+
+#header_logo{       
+    position: relative;
+    top: 18px;
+    color: rgb(246, 244, 247);
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+#header_logo span{  
+    color: rgb(0, 112, 134);
+    font-family: 'Zhi Mang Xing', cursive;
+}
+
+#header_menu a,#header_font a{ /*菜单栏*/
+    text-decoration: none;
+    color: rgb(9, 9, 9); 
+    /* font-weight: bolder; */
+}
+
+#header_menu{
+    position:absolute;
+    top:20px;
+    left: 450px;
+}
+
+#header_menu 
+#menu_list{
+    list-style:none;
+}
+
+#header_menu 
+#menu_list
+.menu_item
+{
+    width: 140px;   /*菜单的宽度*/
+    text-align:center;
+    height: 45px;
+    float: left;
+    padding: 0px 0px;
+}
+
+#header_menu 
+#menu_list
+.menu_item hr
+{
+   margin:0px auto;
+   width: 0%;
+   margin-top: 2px;
+   background-color: rgb(137, 137, 174); /*每个菜单的下划线*/
+   height: 5px;
+   box-shadow: none;
+   border: 0;
+}
+
+#header_menu 
+#menu_list
+.menu_item:hover hr
+{
+   transition: width 0.15s linear s;/*每个菜单的下划线宽度以及展示的速度*/
+   width: 35%;
+}
+
+#header_font{
+    position: relative;
+    left:1100px;    /*中文/日文 位置为左*/
+    top: 32px;
+    color: rgb(115, 117, 118);
+}
+
+#header_board{
+    background-color: aliceblue;
+    width:100%;
+    height: 0px;
+    border: 0px;
+}
+
+#header #header_menu:hover+#header_board{
+    transition: 0.4s;
+    height: 400px;
+}
+
+.menu_item ul{
+    opacity: 0;
+    list-style: none;
+    height: 0px;
+    overflow:hidden;
+}
+
+.menu_item ul li{
+    font-weight: 100;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu_item:hover ul{
+   height: 380px;
+   transition:all 0.2s ease 0.2s; /*菜单出现的速度*/
+   margin-top: 15px;
+   opacity: 1;
+}
+
+ /* .menu_item ul li:hover ul{
+    display: block;
+}  */
+
+.background {
+    width: 560px;
+    height: 560px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.box {
+    width: 850px;
+    height: 500px;
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -40%);
+    background-color:rgb(247, 247, 242);
+    opacity: 0.5;
+}
+
+.box span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-weight: bold;
+    font-size:100px;
+}
+
+
+.welcome {
+    transform: translate(-50%, -50%); 
+    font-weight: bold;
+    font-size:100px;
+    left:1100px;
+}
+
+.aboutSection {
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.aboutSection h2{
+    text-align:center;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.aboutSection h2 span{
+    font-size: 45px;
+     border-bottom:2px solid #000000;  /*下划线 solid表示直线*/
+}
+
+.aboutSection li{
+    float:left;   /*三张照片左边排成一排*/
+    list-style:none;/*不要列表的点*/
+    width:32%;
+    margin-right: 2%;
+}
+
+.aboutSection li h3{
+   font-size: 22px;
+   font-weight: normal;
+   margin: 0;
+   letter-spacing: 1px;
+}
+
+.aboutSection li p{
+    font-size: 14px;
+    margin: 0;
+    letter-spacing: 1px;
+ }
+
+.aboutSection li:last-child{
+   margin-right: 0;
+} 
+
+.aboutSection ul{
+    overflow: hidden;
+    padding: 0;
+}
+
+.aboutSection h2{
+    text-align:center;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}

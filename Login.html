@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Login.css">
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+        <title>user</title>
+    </head>
+
+    <body>
+
+        <br>
+<a href="Index.html"> ホームページへ戻る</a>
+
+        <!-- <canvas></canvas> -->
+        <!--用户注册登陆页面-->
+        <div class="box">
+            <div class="pre-box">
+                <h1>welcome</h1>
+                <p>Join us!</p>
+                <div class="img-box">
+                    <img src="img/regist.png" alt>
+
+                </div>
+            </div>
+            <div class="regist-form">
+                <div class="title-box">
+                    <h1>注册</h1>
+                </div>
+                <div class="input-box">
+                    <!-- 这个label标签的作用就是把名字为 Email和空格链接起来，这样就可以进行一个跳转 -->
+                    <form action="/TODO" method="post">
+                        <label for="turn"><b>username</b></label>
+                        <input type="text" placeholder="孫 悟空" id="turn"
+                            class="home1">
+                        <label for="turn1"><b>Email</b></label>
+                        <input type="email" placeholder="Enter Email" id="turn1"
+                            class="home1">
+                        <label for="turn2"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password"
+                            id="turn2" class="home1">
+                        <label for="turn3"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat Password"
+                            id="turn3" class="home1">
+                    </div>
+                    <div class="btn-box">
+                        <button id="button1">注册</button>
+                        <p onclick="mySwitch()">已有账号？去登陆</p>
+                    </div>
+                </div>
+                <div class="login-form hidden">
+                    <div class="title-box">
+                        <h1>登陆</h1>
+                    </div>
+                    <div class="input-box">
+                        <form action="/TODO" method="post">
+                            <label for="turn"><b>username</b></label>
+                            <input type="text" placeholder="孫 悟空" id="turn"
+                                class="home2">
+                            <label for="turn2"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password"
+                                id="turn2" class="home2">
+                        </div>
+                        <div class="btn-box">
+                            <button id="button2">登陆</button>
+                            <p onclick="mySwitch()">没有账号？去注册</p>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                let flag=true
+                const mySwitch=()=>{
+                if(flag){
+                    // 获取到滑动盒子的dom元素并修改它移动的位置
+                    $(".pre-box").css("transform","translateX(100%)")
+                    // 获取到滑动盒子的dom元素并修改它的背景颜色
+                    $(".pre-box").css("background-color","#c9e0ed")
+                    //修改图片的路径
+                    $("img").attr("src","./img/2regist.jpg")
+                    
+                }
+                else {
+                    $(".pre-box").css("transform","translateX(0%)")
+                    $(".pre-box").css("background-color","#edd4dc")
+                    $("img").attr("src","./img/regist.png")
+                }
+                flag=!flag
+             }
+
+                   
+        document.getElementById("button1").addEventListener("click", function () {
+            window.alert("注册成功！");
+        });
+
+        document.getElementById("button2").addEventListener("click", function () {
+            window.alert("登陆成功！");
+        });
+
+    </script>
+
+            </body>
+        </html>
